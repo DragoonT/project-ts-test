@@ -101,7 +101,7 @@ project-name/
 │   │   └── prisma/
 │   ├── hooks/
 │   │   └── useFetch.ts
-│   ├── components/
+│   ├── components/         # You must be create your icon etc by yourself
 │   │   ├── ui/
 │   │   ├── auth/
 │   │   ├── dashboard/
@@ -143,7 +143,7 @@ project-name/
 │   ├── hooks/
 │   │   ├── useFetch.ts
 │   │   └── useTheme.ts
-│   ├── components/
+│   ├── components/              # You must be create your icon etc by yourself
 │   │   ├── ui/
 │   │   ├── auth/
 │   │   ├── dashboard/
@@ -163,25 +163,6 @@ project-name/
 ├── package.json
 ├── tsconfig.json
 └── README.md
-```
-
----
-
-## Create Project
-
-```bash
-npx create-next-app@latest project-name \
-  --typescript \
-  --tailwind \
-  --app \
-  --src-dir
-```
-
-Install dependencies:
-
-```bash
-npm install
-npm install lucide-react
 ```
 
 ---
@@ -222,6 +203,15 @@ GITHUB_CLIENT_SECRET=""
 
 STRIPE_SECRET_KEY=""
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=""
+```
+
+or
+
+```env
+DATABASE_URL="file:./dev.db"
+SESSION_SECRET="dev-secret-change-me"
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+NEXT_PUBLIC_APP_NAME="Project"
 ```
 
 ---
