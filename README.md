@@ -30,7 +30,55 @@ git --version
 
 ---
 
-### Project Structure
+## Quick Start
+
+Create a new project:
+
+```bash
+npx create-next-app@latest <project-name> --typescript --tailwind --app --s
+
+cd <project-name>
+
+npm install lucide-react
+```
+or
+```bash
+npx create-next-app@latest <project-name> --typescript --tailwind --app --src-dir
+
+cd <project-name>
+
+npm install lucide-react
+
+```
+
+### Clone Existing Project
+
+```bash
+git clone https://github.com/DragoonT/project-ts-test.git <project-name>
+
+cd <project-name>
+
+npm install
+npm install lucide-react
+```
+
+If you encounter TLS/certificate issues:
+
+### PowerShell
+
+```powershell
+$env:NODE_TLS_REJECT_UNAUTHORIZED="0"
+```
+
+### Command Prompt (CMD)
+
+```cmd
+set NODE_TLS_REJECT_UNAUTHORIZED=0
+```
+
+---
+
+### Project Structure (app & src)
 
 ```text
 project-name/
@@ -71,6 +119,51 @@ project-name/
 └── tsconfig.json
 ```
 
+### Project Structure (src-dir)
+
+```text
+project-name/
+├── prisma/
+│   ├── schema.prisma
+│   ├── migrations/
+│   └── seed.ts
+├── public/
+│   ├── images/
+│   ├── icons/
+│   └── favicon.ico
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── api/                 # API routes
+│   │   ├── auth/                # Authentication pages
+│   │   └── (app)/               # Protected application pages
+│   ├── generated/
+│   │   └── prisma/
+│   ├── hooks/
+│   │   ├── useFetch.ts
+│   │   └── useTheme.ts
+│   ├── components/
+│   │   ├── ui/
+│   │   ├── auth/
+│   │   ├── dashboard/
+│   │   ├── forms/
+│   │   └── layouts/
+│   ├── lib/
+│   │   ├── prisma.ts
+│   │   ├── auth.ts
+│   │   ├── permissions.ts
+│   │   ├── api.ts
+│   │   └── utils.ts
+│   └── types/
+│       └── index.ts
+├── .env
+├── next.config.ts
+├── prisma.config.ts
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
 ---
 
