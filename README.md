@@ -241,7 +241,7 @@ Supported providers:
 - SQLite
 - PostgreSQL
 - SQL Server
-```
+
 
 ---
 
@@ -267,3 +267,9 @@ http://localhost:3000
 npm run build
 npm run start
 ```
+---
+
+## Credit
+
+* Learning NextPolyglot from splitteam (P'Jack)
+* DragoonT create all of this Project with no icon ui
