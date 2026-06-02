@@ -236,6 +236,26 @@ Seed the database:
 npm run db:seed
 ```
 
+or in SQLite with easy
+
+```bash
+npx prisma db push
+npm prisma generate
+npm run dev
+```
+
+and for you want to see data in prisma database
+
+```bash
+npx prisma studio
+```
+
+open brownser:
+
+```text
+http://localhost:5555
+```
+
 Supported providers:
 
 - SQLite
