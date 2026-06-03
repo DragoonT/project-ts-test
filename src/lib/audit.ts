@@ -41,7 +41,7 @@ export async function audit({ req, tenantId, userId, action, entity, entityId, d
         action,
         entity: entity ?? null,
         entityId: entityId ?? null,
-        meta: detail ? (detail as object) : undefined,
+        detail: detail ? (detail as object) : undefined,
         ip,
         userAgent,
       },
