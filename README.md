@@ -240,7 +240,7 @@ or in SQLite with easy
 
 ```bash
 npx prisma db push
-npm prisma generate
+npx prisma generate
 npm run dev
 ```
 
